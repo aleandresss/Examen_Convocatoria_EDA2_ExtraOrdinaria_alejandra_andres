@@ -35,3 +35,11 @@ def descomprimir(mensaje_comprimido, arbol):
             nodo = arbol 
     return mensaje 
 
+frecuencias = {"A": 0.2, "F": 0.17, "1": 0.13, "3": 0.21, "0":0.05, "M": 0.09, "T": 0.15}
+arbol=crear_arbol_huffman(frecuencias)
+codificacion=crear_tabla_codificación(arbol)
+mensaje="AF130MT"
+mensaje_comprimido=comprimir(mensaje,codificacion)
+print(mensaje_comprimido)
+mensaje_descomprimido=descomprimir(mensaje_comprimido,arbol)
+print(mensaje_descomprimido)
