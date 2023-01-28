@@ -17,7 +17,8 @@ class armadura(object):
         print(f"Número de armadura: {armadura.nombre[5]}\n")
         print(f"Número de escuadra: {armadura.nombre[6]}\n")
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     lista = [armadura("MK-4726",2),armadura("NR-2205",3),armadura("ST-9481",1),armadura("MK-4711",2)]
     for armadura in lista:
         calificacion(armadura)
+        
