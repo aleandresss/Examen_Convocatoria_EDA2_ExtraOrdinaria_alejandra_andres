@@ -13,3 +13,9 @@ class armadura(object):
         print(f"Identificación del siglo: {armadura.nombre[4]}\n")
         print(f"Número de armadura: {armadura.nombre[5]}\n")
         print(f"Número de escuadra: {armadura.nombre[6]}\n")
+
+    def _str_(self):
+        return f"NOMBRE:\t {self.nombre}\n\n" \
+            f"RANGO:\t {self.rango}\n"
+
+    
